@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.open.testsmartresidencesdk">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name="com.open.testsmartresidencesdktuya.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TestSmartResidenceSdkTuya">
+
+
+        <meta-data
+            android:name = "TUYA_SMART_APPKEY"
+            android:value = "9nstmcaeyr4w4jnggdsc"/>
+        <meta-data
+            android:name = "TUYA_SMART_APP_SECRET"
+            android:value = "3k9crt94ewruy4q94jc8yps9ypp897uu"/>
+
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
