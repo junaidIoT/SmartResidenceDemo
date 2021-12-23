@@ -28,9 +28,19 @@ buildscript {
 
 allprojects {
     repositories {
-        google()
+        mavenLocal()
         mavenCentral()
-        jcenter() // Warning: this repository is going to shut down soon
+        // 对外maven仓库
+        maven {
+            url "https://maven-other.tuya.com/repository/maven-releases/"
+        }
+        maven {
+            url 'https://maven.google.com'
+        }
+        google()
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
+        // google代理仓
+        maven { url 'https://maven.aliyun.com/repository/google' }
     }
 }
 
